@@ -1,0 +1,113 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container__presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: min-content;
+    margin: auto;
+    background: rgb(70,209,177);
+    background: linear-gradient(180deg, rgba(70,209,177,1) 35%, rgba(116,220,196,1) 69%, rgba(255,255,255,1) 100%);
+}
+
+.presentation__content {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.presentation__content {
+    animation: PulseRegular 2s ease 0s 1 normal forwards;
+}
+
+.presentation__perfil {
+    display: flex; 
+    flex-direction: column; 
+    row-gap: 10px;
+}
+
+.perfil__image {
+    display: flex;
+    justify-content: center;
+}
+
+.perfil__image > img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.perfil__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.perfil__icons > a > img {
+    max-width: 50px;
+    background-color: #fff;
+    border-radius: 15%;
+}
+
+.presentation__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.presentation__text > h1 {
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.presentation__text > h3 {
+    font-size: larger;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+@media screen and (min-width: 720px) {
+    .presentation__content {
+        flex-direction: row-reverse;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .perfil__image > img{
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .presentation__text > h1 {
+        font-size: 50px;
+    }
+    
+    .presentation__text > h3 {
+        font-size: 30px;
+    }
+}
+
+@keyframes PulseRegular {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
