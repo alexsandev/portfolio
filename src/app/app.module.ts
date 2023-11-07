@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuBarComponent } from './pages/home/components/menu-bar/menu-bar.component';
-import { PresentationComponent } from './pages/home/components/presentation/presentation.component';
+import { PresentationSectionComponent } from './pages/home/components/presentation-section/presentation-section.component';
 import { AboutSectionComponent } from './pages/home/components/about-section/about-section.component';
+import { ProjectsSectionComponent } from './pages/home/components/projects-section/projects-section.component';
+import { ContactSectionComponent } from './pages/home/components/contact-section/contact-section.component';
+import { MobileMenuComponent } from './pages/home/components/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuBarComponent,
-    PresentationComponent,
-    AboutSectionComponent
+    PresentationSectionComponent,
+    AboutSectionComponent,
+    ProjectsSectionComponent,
+    ContactSectionComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,

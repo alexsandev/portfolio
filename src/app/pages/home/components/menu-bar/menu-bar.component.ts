@@ -1,24 +1,18 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
   templateUrl: './menu-bar.component.html',
   styleUrls: ['./menu-bar.component.css']
 })
-export class MenuBarComponent implements OnInit {
+export class MenuBarComponent {
 
   visibility : boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  @HostListener('window:scroll') onWindowScroll() {
-    if (window.scrollY > 0) { 
-      this.visibility = true;
-    } else {
-      this.visibility = false;
-    }
+  @HostListener('window:scroll') 
+  onWindowScroll() {
+    this.visibility = (window.scrollY > 0 && window.innerWidth > 768)? true : false;
   }
 }

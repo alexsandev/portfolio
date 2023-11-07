@@ -14,7 +14,7 @@
     position:fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     height: 70px;
     width: 100%;
     background-color: white;
@@ -26,31 +26,14 @@
 }
 
 .menu-bar__options {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    padding: 0 50px;
 }
 
-.menu-bar__options__mobile {
-    border: 1px solid black;
-    height: 40px;
-    width: 40px;
-    margin: 0 30px;
-}
-
-@media (min-width: 768px) {
-    .menu-bar__options {
-        display: flex;
-        flex-direction: row;
-        column-gap: 50px;
-        padding: 0 50px;
-    }
-    
-    .menu-bar__options > a:hover {
-        color: #46d1b1;
-    }
-
-    .menu-bar__options__mobile {
-        display: none;
-    }
+.menu-bar__options > a:hover {
+    color: #46d1b1;
 }
 
 @keyframes SlideInTop {
@@ -64,3 +47,4 @@
 		transform: translateY(0);
 	}
 }
+

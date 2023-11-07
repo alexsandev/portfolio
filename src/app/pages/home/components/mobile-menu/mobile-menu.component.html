@@ -1,0 +1,11 @@
+<nav *ngIf="innerWidth <= 768">
+    <div class="mobile-menu__button" (click)="openMenu()"></div>
+    <div *ngIf="optionsVisibility" class="mobile-menu__options" (click)="openMenu()">
+        <div class="mobile-menu__options__column">
+            <a class="mobile-menu__option" href="#inicio">Inicio</a>
+            <a class="mobile-menu__option" href="#sobre">Sobre</a>
+            <a class="mobile-menu__option" href="#projetos">Projetos</a>
+            <a class="mobile-menu__option" href="#contato">Contato</a>   
+        </div>
+    </div>
+</nav>
