@@ -13,14 +13,14 @@
 
 .content {
     display: grid;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
     column-gap: 30px;
     row-gap: 30px;
+    width: 80%;
 }
 
 @media screen and (max-width: 768px) {
-
     .content {
         display: flex;
         flex-direction: row;

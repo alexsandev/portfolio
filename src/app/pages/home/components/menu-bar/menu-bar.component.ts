@@ -11,8 +11,8 @@ export class MenuBarComponent {
 
   constructor() { }
 
-  @HostListener('window:scroll') 
+  @HostListener('window: scroll') 
   onWindowScroll() {
-    this.visibility = (window.scrollY > 0 && window.innerWidth > 768)? true : false;
+    this.visibility = (window.scrollY > 0)? true : false;
   }
 }

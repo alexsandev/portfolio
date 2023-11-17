@@ -36,6 +36,12 @@
     color: #46d1b1;
 }
 
+@media screen and (max-width: 768px) {
+    .container__menu-bar {
+        display: none;
+    }
+}
+
 @keyframes SlideInTop {
 	0% {
 		opacity: 0;

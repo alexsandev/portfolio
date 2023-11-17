@@ -1,5 +1,6 @@
 .mobile-menu__button {
     position: fixed;
+    z-index: 999;
     top: 0;
     right: 0;
     height: 40px;
