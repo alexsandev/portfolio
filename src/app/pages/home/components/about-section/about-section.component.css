@@ -1,9 +1,10 @@
 * {
     font-family: Roboto;
 }
-.container__about-section {
+.container {
     display: flex;
     flex-direction: column;
+    row-gap: 30px;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,16 +12,34 @@
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(70,209,177,1) 50%, rgba(255,255,255,1) 100%);
 }
 
-.about-section__content {
+.content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    width: 50%;
     row-gap: 30px;
-    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
 }
 
-.about-section__content > h1 {
-    font-size:xx-large;
-    color: black;
-    text-transform: uppercase;
+.title {
+    width: 50%;
+}
+
+.title > h1 {
+    width: max-content;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        width: 80%;
+    }
+
+    .content {
+        width: 80%;
+    }
 }
