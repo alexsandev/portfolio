@@ -1,7 +1,7 @@
 * {
     font-family: Roboto;
 }
-.container__projects-section {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,21 @@
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(70,209,177,1) 50%, rgba(255,255,255,1) 100%);
 }
 
-.projects-section__content > h1{
-    text-transform: uppercase;
-    size: 50px;
+.content {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 300px 300px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        height: 600px;
+        overflow: scroll;
+    }
 }
