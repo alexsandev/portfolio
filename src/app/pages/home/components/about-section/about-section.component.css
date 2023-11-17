@@ -15,31 +15,48 @@
 .content {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    height: 630px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.content > header {
+    display: flex;
+    flex-direction: column;
+}
+
+.content > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.card {
+    display: flex; 
+    flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.card > p {
     width: 50%;
-    row-gap: 30px;
-    background-color: white;
-    border-radius: 30px;
-    padding: 30px;
+    justify-content: center;
 }
 
-.title {
-    width: 50%;
+.card > img {
+    max-height: 64px;
 }
 
-.title > h1 {
-    width: max-content;
-    background-color: white;
-    border-radius: 30px;
-    padding: 30px;
-}
-
-@media screen and (max-width: 768px) {
-    .title {
-        width: 80%;
+@media screen and (max-width: 550px) {
+    .card > img {
+        display: none;
     }
 
-    .content {
-        width: 80%;
+    .card > p {
+        width: 100%;
     }
 }
