@@ -10,6 +10,7 @@ import { AboutSectionComponent } from './pages/home/components/about-section/abo
 import { ProjectsSectionComponent } from './pages/home/components/projects-section/projects-section.component';
 import { ContactSectionComponent } from './pages/home/components/contact-section/contact-section.component';
 import { MobileMenuComponent } from './pages/home/components/mobile-menu/mobile-menu.component';
+import { ProjectCardComponent } from './pages/home/components/projects-section/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MobileMenuComponent } from './pages/home/components/mobile-menu/mobile-
     AboutSectionComponent,
     ProjectsSectionComponent,
     ContactSectionComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

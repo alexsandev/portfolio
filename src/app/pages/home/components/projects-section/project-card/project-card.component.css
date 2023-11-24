@@ -1,0 +1,38 @@
+.container {
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.container > a {
+    text-decoration:none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 30px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.title > img {
+    height: 25px;
+}
+
+.description {
+    color: rgb(189, 186, 186);
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}

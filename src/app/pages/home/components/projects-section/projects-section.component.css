@@ -24,8 +24,6 @@
     .content {
         display: flex;
         flex-direction: row;
-        width: 95%;
-        height: 600px;
         overflow: scroll;
     }
 }
