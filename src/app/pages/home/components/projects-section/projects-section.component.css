@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 30px;
     height: 100vh;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(70,209,177,1) 50%, rgba(255,255,255,1) 100%);
@@ -17,6 +18,10 @@
     grid-template-rows: 300px 300px;
     column-gap: 30px;
     row-gap: 30px;
+    width: 80%;
+}
+
+.title {
     width: 80%;
 }
 

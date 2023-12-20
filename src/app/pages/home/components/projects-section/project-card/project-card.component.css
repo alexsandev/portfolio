@@ -5,7 +5,8 @@
 }
 
 .container > a {
-    text-decoration:none;
+    text-decoration: none;
+    color: black;
 }
 
 .content {
@@ -19,20 +20,20 @@
 .title {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     column-gap: 15px;
 }
 
-.title > img {
-    height: 25px;
-}
-
 .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: rgb(189, 186, 186);
 }
 
 .detail {
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
 }
