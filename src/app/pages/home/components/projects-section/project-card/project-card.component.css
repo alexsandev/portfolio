@@ -1,7 +1,6 @@
 .container {
     height: 300px;
     background-color: white;
-    border-radius: 15px;
 }
 
 .container > a {
